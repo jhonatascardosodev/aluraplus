@@ -1,0 +1,13 @@
+[gd_scene load_steps=3 format=3 uid="uid://j2xktoh6fnhd"]
+
+[ext_resource type="PackedScene" uid="uid://b7e7tgg1yfwf6" path="res://dog.tscn" id="1_24evx"]
+[ext_resource type="Script" path="res://main.gd" id="2_xlijl"]
+
+[node name="main" type="Node2D"]
+
+[node name="dog" parent="." instance=ExtResource("1_24evx")]
+script = ExtResource("2_xlijl")
+
+[node name="pig" type="CharacterBody2D" parent="."]
+
+[node name="Sprite2D" type="Sprite2D" parent="pig"]
